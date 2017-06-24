@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<map>
+	<!--locator of page map info -->
+	<!-- GPO LOGIN page -->
+	<page pageName="com.seleniumwork.page.GPO.LoginGPO">
+		<locator type="cssSelector" timeOut="3"
+			value="input#pt-login-username-textbox">logname</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="input#pt-login-password-field">logpass</locator>
+		<locator type="cssSelector" timeOut="3" value="input.formBtnText">LogIn</locator>
+	</page>
+	
+	<!-- GPO HOME page -->
+	<page pageName="com.seleniumwork.page.GPO.HPEFSHome">
+		<locator type="cssSelector" timeOut="3" value="select#gNQuickLinks">Communitiess
+		</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="#gNQuickLinks>option[value*='phoenix']">PhoenixLink</locator>
+	</page>
+	
+	<!-- GPO Phoenix page -->
+	<page pageName="com.seleniumwork.page.GPO.Phoenix">
+		<locator type="cssSelector" timeOut="3"
+			value="#AM_LD_Schedules_MENU>#idLocalNav">Schedules</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="#_fltCustomerList_cltFilter_0tbValue">CustomerSelectionByName</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="#_fltCustomerList_cltFilter_0ddlColumn>[value*='PHX_CLIENTS.ID']">CustomerSelectionByID</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="#_fltCustomerList_cltFilter_0tbValue">CustomerInputID</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="#_fltCustomerList_cltFilter_0tbValue">selectBowdoinCollege</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="#_fltCustomerListbtFilter">schedulesCustomerSearch</locator>
+		<locator type="cssSelector" timeOut="3"
+			value=".listItemTwoBg.listText>td">selectBowdoinCollege</locator>
+		<locator type="cssSelector" timeOut="3" value="input.btn2">schedulesAddNew
+		</locator>
+	</page>
+	
+	<!-- GPO Schedule page -->
+	<page pageName="com.seleniumwork.page.GPO.Schedules">
+		<locator type="cssSelector" timeOut="3" value="input#dgResultsbtNew">schedulesAddNew
+		</locator>
+		<locator type="cssSelector" timeOut="3" value="input#ctrControlbtCancel">schedulesDetailsCancel
+		</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="input#ctrControlbtEditSave">schedulesDetailsSave</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="select#ctrSchedule_ctlcustInvIndicatorCode_edit">schedulesInvDestRule</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="select#ctrSchedule_ctlscheduleHpfsLegalEntityId_edit">schedulesHPFSLegalEntity</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="select#ctrSchedule_ctlscheduleReceiveInCcyId_edit">schedulesReceiveInCCY</locator>
+		<!-- <locator type="cssSelector" timeOut="3" value="select#ctrSchedule_ctlscheduleReceiveInCcyId_edit>[value*='4243698970']">schedulesReceiveInCCY</locator> -->
+		<locator type="cssSelector" timeOut="3"
+			value="select#ctrSchedule_ctlscheduleBusSubSegmentCode_edit">schedulesBusinessSubSegement</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="select#ctrSchedule_ctlscheduleRegionId_edit">schedulesRegion</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="select#ctrSchedule_ctlscheduleProcessSegmentCode_edit">schedulesProcessSegment</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="input#ctrSchedule_ctlscheduleTerm_edit">schedulesTerm</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="select#ctrSchedule_ctlscheduleType_edit">schedulesSchdeuleType</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="select#ctrSchedule_ctlscheduleFrequencyCode_edit">schedulesFrequency</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="select#ctrSchedule_ctlscheduleAdvanceArrearsCode_edit">schedulesAdvance</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="select#ctrSchedule_ctlTandC_edit">schedulesTermsAndConditions</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="input#ctrSchedule_ctlscheduleAddressId_edit_input">schedulesBillingAddress</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="input#ctrSchedule_ctlscheduleOpptyId_edit_input">schedulesOpportunity</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="select#ctrScheduleBilling_ctlscheduleBillingMethodId_edit">schedulesBillingMethod</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="select#ctrScheduleBilling_ctlscheduleInvoiceFormatCode_edit">schedulesInvoiceFormat</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="select#ctrScheduleEndOfLease_ctlUPMTermLevel_edit">schedulesUPMTermLevel</locator>
+		<locator type="cssSelector" timeOut="3"
+			value="select#ctrControlBottombtEditSave">schedulesDetailsBtSave</locator>
+	</page>
+</map>
